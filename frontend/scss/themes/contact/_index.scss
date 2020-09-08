@@ -1,0 +1,45 @@
+.main-contact {
+    height: 100vh;
+    background-color: $color-white;
+    color: $color-black;
+
+    &__section {
+        margin: 1.5rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        line-height: 2.5;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        line-height: 2;
+        font-size: 1.3rem;
+        padding-left: 1.5rem;
+        border-radius: 5px;
+        border: 1px solid #DCDCDC;
+    }
+
+    span {
+        font-size: 1rem;
+        line-height: 2;
+        color: $color-light;
+    }
+
+    button {
+        color: white;
+        background-color: $color-light;
+        border: 10px;
+        width: 100%;
+        font-size: 1.3rem;
+        margin: 1.66rem 0;
+        padding: 1.3rem 0;
+    }
+
+    legend {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+}

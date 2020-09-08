@@ -1,0 +1,103 @@
+.main-portfolio__skills {
+    background-color: $color-dark;
+    min-height: 90vh;
+    background-color: #F6F6F6;
+    position: relative;
+    z-index: 50;
+
+    &__header__title {
+        font-size: 2rem;
+        padding: 1.6rem 0;
+        font-weight: bolder;
+        text-align: center;
+        position: relative;
+        z-index: 50;
+    }
+
+    &__skill {
+        text-align: center;
+        background-color: $color-darker;
+        border: 1px solid $color-light;
+        padding: 0 1.33rem;
+        position: relative;
+        z-index: 50;
+
+
+        &__header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-weight: bolder;
+            padding: 1rem 0;
+            line-height: 2;
+
+            span:first-child {
+                line-height: 1.1;
+                font-size: 1.2rem;
+            }
+
+            span:nth-child(2) {
+                line-height: 3;
+                font-size: 1.2rem;
+            }
+
+            //icons
+            .flex-container {
+                i {
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+
+        &__body {
+            line-height: 1.5;
+            font-size: 1.16rem;
+            font-weight: 300;
+
+            &__p {
+                margin-bottom: 1.5rem;
+                font-size: 1.4rem;
+            }
+        }
+
+        &__button {
+            background-color: $color-light;
+            font-size: 1.16rem;
+            border: none;
+            color: white;
+            font-weight: 300;
+            padding: 1rem 1.83rem;
+        }
+
+        &__span {
+            font-size: 1rem;
+            display: inline-block;
+            margin: 1.8rem 0;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        z-index: 1;
+        opacity: .3;
+    }
+
+    img {
+        width: 100%;
+        position: absolute;
+        bottom: 20px;
+    }
+}
+
+
+.fa-angle-left, .fa-angle-right {
+    color: $color-light;
+    font-size: 2rem;
+    z-index: 20;
+}

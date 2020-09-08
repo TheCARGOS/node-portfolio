@@ -1,4 +1,4 @@
-import { Request, Response } from "express"
+import { Request, Response, NextFunction } from "express"
 import User from "../models/User"
 import Message from "../models/Message"
 import jwt from "jsonwebtoken"
@@ -49,6 +49,12 @@ export const deleteMessage = async ( req: Request, res: Response ) => {
     } else {
         res.json({message: "no id provided"})
     }
+}
+
+export async function userFromJWT (req: Request, res: Response, next: NextFunction) {
+    //@ts-ignore
+    const user = await User.findById(req.userId, {password: 0})
+    res.json(user)
 }
 
 async function createToken (id: string) {

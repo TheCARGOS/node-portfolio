@@ -1,0 +1,66 @@
+.main-portfolio__projects {
+    background-color: $color-dark;
+
+    &__header__title {
+        font-size: 2rem;
+        padding: 1.6rem 0;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    &__project {
+        text-align: center;
+        background-color: $color-darker;
+        border: 1px solid $color-light;
+        padding: 0 1.33rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+
+        &__header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-weight: bolder;
+            padding: 1rem 0;
+
+            span:first-child {
+                line-height: 1.1;
+                font-size: 1.2rem;
+            }
+
+            span:nth-child(2) {
+                line-height: 3;
+                font-size: 1.2rem;
+            }
+
+            //icons
+            .flex-container {
+                i {
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+
+        &__body {
+            line-height: 1.5;
+            font-size: 1.33rem;
+            font-weight: 300;
+
+            &__p {
+                margin-bottom: .1rem;
+            }
+
+            img {
+                height: 302px;
+                height: 25rem;
+                margin: 1.3rem 0;
+            }
+        }
+    }
+}
+
+
+.fa-angle-left, .fa-angle-right {
+    color: $color-light;
+    font-size: 2rem;
+}

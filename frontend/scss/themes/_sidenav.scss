@@ -1,0 +1,96 @@
+.sidenav {
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    width: 278px;
+    left: -278px;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 1rem;
+
+    background-color: $color-darker;
+
+    &--active {
+        transform: translateX(278px);
+        transition: .4s;
+    }
+
+    &__close {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: transparent;
+        font-size: 24px;
+        font-weight: bolder;
+        border: none;
+        color: white;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 3;
+        font-family: Qaranta;
+    }
+
+    &__search {
+        margin: 0 auto;
+        align-self: center;
+        font-size: 1.16rem;
+        border-radius: 10px;
+        border: none;
+        padding: .5rem 2rem;
+        color: $color-gray;
+        width: 100%;
+        font-weight: lighter;
+        line-height: 2;
+    }
+
+    &__list {
+        margin: 1.16rem 0;
+        color: $color-gray;
+
+        &__item {
+            font-size: 1.33rem;
+            line-height: 2.5;
+
+            &:hover {
+                background: rgba(white, .1);
+                border-left: 3px solid $color-light;
+                padding: 0 1.4rem;
+                transition: .4s padding;
+            }
+        }
+    }
+
+    .button-group {
+        font-size: 12px;
+        width: 100%;
+        
+        button {
+            font-size: 1.23rem;
+            line-height: 3;
+            width: 100%;
+            border-radius: 10px;
+            border: none;
+            margin: .4rem 0;
+
+            // &:first-child {
+            //     background: $color-light;
+            //     color: white;
+            // }
+
+            // &:last-child {
+            //     background: transparent;
+            //     color: $color-gray;
+            //     border: 1px solid $color-gray;
+            // }
+            background: $color-light;
+            color: white;
+        }
+    }
+}

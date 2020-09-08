@@ -1,0 +1,26 @@
+$color-darker: #1E262C;
+$color-dark: #282F35;
+$color-light: #F6732C;
+$color-lighter: #FDA224;
+$color-gray: #909AAA;
+$color-white: #F6F6F6;
+$color-black: #707070;
+
+@import "./base/_reset.scss";
+@import "./layout/_layout.scss";
+@import "./themes/_main-header.scss";
+@import "./themes/portfolio/_index.scss";
+@import "./themes/contact/_index.scss";
+@import "./themes/_sidenav.scss";
+// @import "./modules/_modules.scss";
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.hide {
+    transform: rotate(100deg);
+    transform: scaleX(0);
+    transition: 2s;
+}

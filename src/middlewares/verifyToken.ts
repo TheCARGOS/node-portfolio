@@ -5,7 +5,10 @@ async function verifyToken (req: Request, res: Response, next: NextFunction) {
     const token = req.header("Authorization")
     try {
         if (token) {
-            const decoded = await verify(token, process.env.SECRET_KEY || "argosisagoodboy")
+            const decoded = await verify(token.split(" ")[1], process.env.SECRET_KEY || "argosisagoodboy")
+            //@ts-ignore
+            req.userId = decoded.id
+            //@ts-ignore
             next()
         }
     } catch(e) {

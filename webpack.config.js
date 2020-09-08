@@ -4,19 +4,16 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const webpack = require("webpack")
 
 module.exports = {
-    entry: "./build/index",
+    entry: "./frontend/main",
     output: {
         path: path.join(__dirname, "./dist"),
         filename: "bundle.js"
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: "./build/index.html"
+        template: "./frontend/index.html"
       }),
-      new VueLoaderPlugin(),
-      // new webpack.DefinePlugin({
-      //   'process.env.NODE_ENV': JSON.stringify('production')
-      // })
+      new VueLoaderPlugin()
     ],
     module: {
         rules: [
@@ -36,7 +33,7 @@ module.exports = {
             loader: 'vue-loader'
           },
           {
-            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            test: /\.(woff(2)?|ttf|eot|jpg|png|svg)(\?v=\d+\.\d+\.\d+)?$/,
             use: [
               {
                 loader: 'file-loader',
@@ -50,9 +47,9 @@ module.exports = {
         ],
       },
     devServer: {
-        contentBase: path.join(__dirname, './build'),
+        contentBase: path.join(__dirname, './frontend'),
         compress: true,
         port: 9000
-    },
+    }
     // mode: "production"
 }

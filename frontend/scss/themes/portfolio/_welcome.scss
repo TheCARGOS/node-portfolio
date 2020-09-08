@@ -1,0 +1,50 @@
+.main-portfolio__header {
+    overflow: visible;
+
+    .container {
+        z-index: 50;
+        position: relative;
+    }
+
+    &__title {
+        font-size: 2.33rem;
+        font-weight: bolder;
+        line-height: 1.5;
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+        margin: .5rem 0;
+        margin-bottom: 1.5rem;
+        overflow-y: hidden;
+    }
+
+    background-image: linear-gradient(to left, $color-light, $color-lighter);
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to left, $color-light, $color-lighter);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        transform-origin: bottom right;
+        transform: scaleX(2) rotate(8deg);
+    }
+}
+
+.main-portfolio__welcome {
+    &__img {
+        background: url("../public/mario.png");
+        background-position-x: right;
+        background-size: 100% cover;
+        opacity: .7;
+        height: 326px;
+        width: 100%;
+    }
+}
