@@ -10,9 +10,10 @@ $color-black: #707070;
 @import "./layout/_layout.scss";
 @import "./themes/_main-header.scss";
 @import "./themes/portfolio/_index.scss";
-@import "./themes/contact/_index.scss";
+@import "./themes/signin/_index.scss";
 @import "./themes/_sidenav.scss";
-// @import "./modules/_modules.scss";
+@import "./modules/_modules.scss";
+@import "./modules/_main-banner.scss";
 
 body {
     background-color: black;

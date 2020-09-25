@@ -1,6 +1,5 @@
 .sidenav {
     height: 100vh;
-    position: absolute;
     position: fixed;
     width: 278px;
     left: -278px;
@@ -8,8 +7,9 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 0 1rem;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
 
     background-color: $color-darker;
 
@@ -35,13 +35,14 @@
         font-weight: bolder;
         line-height: 3;
         font-family: Qaranta;
+        font-family: "Segoe UI";
     }
 
     &__search {
         margin: 0 auto;
         align-self: center;
         font-size: 1.16rem;
-        border-radius: 10px;
+        border-radius: 20px;
         border: none;
         padding: .5rem 2rem;
         color: $color-gray;

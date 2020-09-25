@@ -1,8 +1,8 @@
 <template>
-    <section class="main">
+    <main class="main">
         <h1>DASHBOARD</h1>
 
-    </section class="main">
+    </main>
 </template>
 
 <style lang="scss" scoped>

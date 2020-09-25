@@ -5,3 +5,35 @@
     line-height: 3;
     font-family: Qaranta;
 }
+
+button {
+    cursor: pointer;
+}
+
+.button--light {
+    background-color: transparent;
+    font-size: 1.16rem;
+    color: $color-white;
+    font-weight: 300;
+    padding: 1rem 1.83rem;
+    width: 90%;
+    border: 1px solid $color-white;
+    transition: .3s;
+
+    &:hover {
+        background-color: $color-white;
+        color: $color-dark;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .hide-on-sm {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .hide-on-lg {
+        display: none;
+    }
+}

@@ -1,15 +1,16 @@
 .main-header {
     background: $color-darker;
-    position: relative;
     font-size: 1.66rem;
     padding: 1.6rem 0;
     font-weight: bolder;
-    position: fixed;
-    width: 100%;
 
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__title {
+        font-family: "Raleway";
     }
 }

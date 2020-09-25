@@ -3,12 +3,12 @@ import Message from "../models/Message"
 
 export const postMessage = async (req: Request, res: Response) => {
     const body = await req.body
-    if ( body && body.fullname && body.country && body.email && body.phone &&  body.description) {
+    if ( body && body.name && body.email && body.phone &&  body.subject && body.description) {
         const newMessage = new Message({
-            fullname: body.fullname,
-            country: body.country,
+            name: body.name,
             email: body.email,
             phone: body.phone,
+            subject: body.subject,
             description: body.description
         })
         await newMessage.save()

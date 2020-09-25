@@ -1,5 +1,8 @@
-.main-portfolio__header {
+.main-banner__header {
     overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .container {
         z-index: 50;
@@ -21,6 +24,16 @@
         overflow-y: hidden;
     }
 
+    &__button {
+        padding: 0 4.91rem;
+        color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        background: transparent;
+        line-height: 2;
+        font-size: 1.33rem;
+    }
+
     background-image: linear-gradient(to left, $color-light, $color-lighter);
     position: relative;
 
@@ -38,13 +51,44 @@
     }
 }
 
-.main-portfolio__welcome {
+.main-banner__welcome {
     &__img {
         background: url("../public/mario.png");
         background-position-x: right;
+        background-repeat: no-repeat;
         background-size: 100% cover;
         opacity: .7;
         height: 326px;
         width: 100%;
+    }
+
+    @media screen and (min-width: 570px) {
+        display: flex;
+        flex-direction: row-reverse;
+
+        &__img {
+            background-size: 100% 100%;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 450px;
+        &__img {
+            height: 100%;
+        }
+    }
+
+    @media screen and (min-width: 1600px) {
+        height: 650px;
+        &__img {
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .main-banner__header {
+        overflow-x: visible;
+        overflow-y: visible;
     }
 }

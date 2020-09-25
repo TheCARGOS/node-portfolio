@@ -1,10 +1,10 @@
 import { Schema, model } from "mongoose"
 
 const messageSchema = new Schema({
-    fullname: String,
+    name: String,
     email: String,
     phone: String,
-    country: String,
+    subject: String,
     message: String
 })
 
