@@ -1,20 +1,27 @@
+
+@media screen and (max-width: 570px) {
+    .main-banner__header {
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+}
 .main-banner__header {
     overflow: visible;
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    align-items: center;    
+    
     .container {
         z-index: 50;
         position: relative;
     }
-
+    
     &__title {
         font-size: 2.33rem;
         font-weight: bolder;
         line-height: 1.5;
     }
-
+    
     &__subtitle {
         font-size: 1.5rem;
         font-weight: 300;
@@ -23,7 +30,7 @@
         margin-bottom: 1.5rem;
         overflow-y: hidden;
     }
-
+    
     &__button {
         padding: 0 4.91rem;
         color: white;
@@ -33,10 +40,10 @@
         line-height: 2;
         font-size: 1.33rem;
     }
-
+    
     background-image: linear-gradient(to left, $color-light, $color-lighter);
     position: relative;
-
+    
     &::before {
         content: "";
         width: 100%;
@@ -48,12 +55,13 @@
         z-index: 10;
         transform-origin: bottom right;
         transform: scaleX(2) rotate(8deg);
+        // height: 500px;
     }
 }
 
-.main-banner__welcome {
+.main-banner {
     &__img {
-        background: url("../public/mario.png");
+        // background: url("../public/mario.png");
         background-position-x: right;
         background-repeat: no-repeat;
         background-size: 100% cover;
@@ -79,16 +87,20 @@
     }
 
     @media screen and (min-width: 1600px) {
-        height: 650px;
+        height: 597px;
         &__img {
             height: 100%;
         }
     }
-}
 
-@media screen and (max-width: 570px) {
-    .main-banner__header {
-        overflow-x: visible;
-        overflow-y: visible;
+    &--blue {
+        .main-banner__header {
+            background-image: linear-gradient(to right, $color-purple, $color-blue);
+            
+            &::before {
+                background-image: linear-gradient(to right, $color-purple, $color-blue);
+            }
+        }
+
     }
 }

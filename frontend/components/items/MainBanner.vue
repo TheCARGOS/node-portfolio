@@ -1,7 +1,7 @@
 <template>
-    <section class="main-banner__welcome">
-        <!-- <img class="main-banner__welcome__img" src="../public/mario.png" alt=""> -->
-        <div class="main-banner__welcome__img" :style="{ backgroundImage: `url(${imgURL})` }"></div>
+    <section class="main-banner">
+        <!-- <img class="main-banner__img" src="../public/mario.png" alt=""> -->
+        <div class="main-banner__img" :style="{ backgroundImage: `url(${imgURL})` }"></div>
         <header class="main-banner__header">
             <div class="container">
                 <h1 class="main-banner__header__title">{{title}}</h1>
@@ -22,5 +22,4 @@ export default {
         imgURL: String
     }
 }
-
 </script>

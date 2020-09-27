@@ -5,6 +5,7 @@
             :subtitle=subtitle
             :buttonName=buttonName
             :imgURL=imgURL
+            class="main-banner--blue"
         ></main-banner>
 
         <div class="container">
@@ -81,6 +82,8 @@ export default {
             subject: "",
             description: "",
             errors: [],
+
+            // banner content
             title: "CONTACT ME",
             subtitle: "Feel free to contact me anytime using this form or via gmail at loayavelez@gmail.com I will replay as  soon as possible.",
             buttonName: "Contact me",
