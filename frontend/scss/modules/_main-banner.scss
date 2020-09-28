@@ -1,15 +1,16 @@
 
 @media screen and (max-width: 570px) {
-    .main-banner__header {
-        overflow-x: visible;
-        overflow-y: visible;
+    .main-banner {
+        overflow: hidden;
     }
 }
 .main-banner__header {
-    overflow: visible;
+    // overflow-x: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    padding-bottom: 4rem;
+
     
     .container {
         z-index: 50;
@@ -64,7 +65,7 @@
         // background: url("../public/mario.png");
         background-position-x: right;
         background-repeat: no-repeat;
-        background-size: 100% cover;
+        background-size: 100% 100%;
         opacity: .7;
         height: 326px;
         width: 100%;
@@ -87,7 +88,7 @@
     }
 
     @media screen and (min-width: 1600px) {
-        height: 597px;
+        height: 570px;
         &__img {
             height: 100%;
         }
@@ -99,6 +100,17 @@
             
             &::before {
                 background-image: linear-gradient(to right, $color-purple, $color-blue);
+            }
+        }
+
+    }
+
+    &--red {
+        .main-banner__header {
+            background-image: linear-gradient(to right, $color-red, $color-fuchsia);
+            
+            &::before {
+                background-image: linear-gradient(to right, $color-red, $color-fuchsia);
             }
         }
 

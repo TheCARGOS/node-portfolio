@@ -60,7 +60,7 @@ export default {
             title: "LOGIN AS CARLOS",
             subtitle: "From here I will manage the site. From here I will manage the site. From here I will manage the site.",
             buttonName: "Log in",
-            imgURL: '/public/mario-fight.jpg'
+            imgURL: '/public/mario-builder.jpg'
         }
     },
     computed: {

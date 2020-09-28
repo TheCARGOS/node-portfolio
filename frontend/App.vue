@@ -21,7 +21,7 @@
                 <router-link tag="li" to="/contact" class="sidenav__list__item">Contact</router-link>
                 <!-- <router-link tag="li" to="/" class="sidenav__list__item">CV</router-link> -->
                 <!-- <router-link tag="li" to="/" class="sidenav__list__item">Games</router-link> -->
-                <!-- <router-link tag="li" to="/" class="sidenav__list__item">About</router-link> -->
+                <router-link tag="li" to="/about" class="sidenav__list__item">About</router-link>
             </ul>
         </div>
         <div class="button-group">

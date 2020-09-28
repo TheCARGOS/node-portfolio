@@ -108,7 +108,7 @@ export default {
         return {
             title: "CARLOS' PORTFOLIO",
             // banner content
-            subtitle: 'Hey there my name is Carlos Loayza. I am Full Stack Web Developer focus on Frontend Development. Check out my projects and skills if you want to, please consider giving me feedback about this.',
+            subtitle: 'Hey there my name is Carlos Loayza. I am Junior Full Stack Web Developer focus on Frontend Development. Check out my projects and skills if you want to, please consider giving me feedback about this.',
             buttonName: "Give Feedback",
             imgURL: '../public/mario.png',
             // end banner content

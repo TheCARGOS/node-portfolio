@@ -7,6 +7,8 @@ $color-white: #F6F6F6;
 $color-black: #707070;
 $color-blue: #255464;
 $color-purple: #E96BF2;
+$color-red: #E52E2E;
+$color-fuchsia: #B4477A;
 
 @import "./base/_reset.scss";
 @import "./layout/_layout.scss";
@@ -16,9 +18,10 @@ $color-purple: #E96BF2;
 @import "./themes/_sidenav.scss";
 @import "./modules/_modules.scss";
 @import "./modules/_main-banner.scss";
+@import "./modules/_main-form.scss";
 
 body {
-    background-color: black;
+    background-color: $color-darker;
     color: white;
 }
 

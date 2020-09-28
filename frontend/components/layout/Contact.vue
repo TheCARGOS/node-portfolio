@@ -1,46 +1,44 @@
 <template>
-    <main class="main main-contact">
+    <main class="main main-contact" style="background: #1E262C;">
         <main-banner
             :title=title
             :subtitle=subtitle
             :buttonName=buttonName
             :imgURL=imgURL
-            class="main-banner--blue"
+            class="main-banner--red"
         ></main-banner>
 
         <div class="container">
             <div class="main-form">
-                <h1 class="main-contact__title">Contact me</h1>
+                <h1 class="main-form__title">MESSAGE ME</h1>
                 <span v-if="errors.length" class="main-contact__span">All fields are required.</span>
-                <form class="main-contact__form" @submit.prevent="sendMessage()">
-                    <fieldset>
-                        <input v-model="name"class="main-contact__input" placeholder="Name"/>
-                    </fieldset>
-                    <fieldset>
-                        <input v-model="email" class="main-contact__input" placeholder="Email"/>
-                    </fieldset>
-                    <fieldset>
-                        <input v-model="phone" class="main-contact__input" placeholder="Phone"/>
-                    </fieldset>
-                    <fieldset>
-                        <!-- <input v-model="subject" class="main-contact__input" placeholder="Subject"/> -->
-                        <!-- <select>
-                            <option value="frontend">FRONT END POSITION</option>
-                            <option value="fullstack">FULL STACK POSITION</option>
-                            <option value="freelance">FREELANCE</option>
-                        </select> -->
-                        <input value="frontend" type="radio" name="role">
-                        <label for="frontend">FRONT END</label>
-                        <input value="fullstack" type="radio" name="role">
-                        <label for="fullstack">FULL STACK</label>
-                        <input value="frontend" type="radio" name="role">
-                        <label for="frontend">FRONT END</label>
-                    </fieldset>
-                    <fieldset>
-                        <textarea v-model="description" rows="5" class="main-contact__input" placeholder="Type your message...">
-                        </textarea>
-                    </fieldset>
-                    <button class="main-contact__button" type="submit">Send Message</button>
+                <form class="main-form__grid" @submit.prevent="sendMessage()">
+                    <div>
+                        <fieldset>
+                            <legend class="main-form__legend" for="name">NAME</legend>
+                            <input v-model="name"class="main-contact__input" placeholder="Name"/>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="main-form__legend" for="email">EMAIL</legend>
+                            <input v-model="email" class="main-contact__input" placeholder="Email"/>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="main-form__legend" for="phone">PHONE</legend>
+                            <input v-model="phone" class="main-contact__input" placeholder="Phone"/>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend class="main-form__legend" for="subject">SUBJECT</legend>
+                            <input v-model="subject" class="main-contact__input" placeholder="Subject"/>
+                        </fieldset>
+                        <fieldset>
+                            <legend class="main-form__legend" for="message">MESSAGE</legend>
+                            <textarea v-model="description" rows="5" class="main-contact__input" placeholder="Type your message...">
+                            </textarea>
+                        </fieldset>
+                        <button class="main-form__button main-form__button--circle" type="submit"><i class="fas fa-play" style="color: white;"></i></button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -87,7 +85,7 @@ export default {
             title: "CONTACT ME",
             subtitle: "Feel free to contact me anytime using this form or via gmail at loayavelez@gmail.com I will replay as  soon as possible.",
             buttonName: "Contact me",
-            imgURL: 'https://i.pinimg.com/originals/fa/2a/c9/fa2ac9564dae97b9437bccdf27f3044a.png'
+            imgURL: '/public/mario-beach.jpg'
         }
     },
     methods: {
