@@ -5,38 +5,38 @@
             :subtitle=subtitle
             :buttonName=buttonName
             :imgURL=imgURL
-            class="main-banner--red"
+            :route=route
+            class="main-banner--white"
         ></main-banner>
 
         <div class="container">
-            <div class="main-form">
-                <h1 class="main-form__title">SIGN IN AS CARLOS</h1>
-                <div v-if="errors.length">
-                    <span>Please correct the following error(s):</span>
-                    <ul>
-                        <li v-for="error in errors">{{ error }}</li>
-                    </ul>
-                </div>
-                <div class="main-form__grid">
-                    <form @submit.prevent="login()">
-                        <fieldset>
-                            <input placeholder="Username" v-model="username">
-                        </fieldset>
-                        <fieldset>
-                            <input type="password" placeholder="password" v-model="password">
-                        </fieldset>
-                        <span>Server message</span>
-                        <button class="main-form__button main-form__button--block" type="submit">Sign In</button>
-                        <legend class="main-form__span">This form is supposed to be for me only, from here i will manage the site.</legend>
-                    </form>
-                    <div>
-                        <img src="/public/mario-old.png" style="max-height: 300px;">
+            <div class="main-about">
+                <h1 class="main-about__title title">ABOUT SECTION</h1>
+
+                <div class="main-form">
+                    <div class="main-form__grid">
+                        <div>
+                            <h1 class="main-about__subtitle text-lg">Where this design come from?</h1>
+                            <p class="text-md">
+                                I'm not a web designer, that was the most frustrating part about creating a website all by my own
+                                So I start looking for some website I love, in this project I've based my design on Origin Website
+                                using Adobe XD, Adobe Photoshop and GIMP.</br></br>
+                                Also notice I'm using Mario images that of course all rights belongs to Nintendo.
+                            </p>
+                        </div>
+                        <div>
+                            <h1 class="main-about__subtitle text-lg">How was this web made?</h1>
+                            <p class="text-md">
+                                For this project I've used the MEVN Stack. One thing to mention is it was build on the new JS Runtime
+                                Denojs, but I do have a lot of ideas for upgrating and by the moment I was developing this project
+                                there were no Websockets modules.</br></br>
+                                Tokens were implemented for authentication using jsonwebtoken library.
+                                I have also use the CSS pre-processor called SASS (SCSS).</br>
+                                Vue and Vue-Router were used but Vuex was not mandatory (yet)</br>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="profile-section" v-if="loggedIn">
-                {{goToDashboard()}}
             </div>
         </div>
     </main>
@@ -57,10 +57,11 @@ export default {
             errors: [],
 
             // banner content
-            title: "LOGIN AS CARLOS",
-            subtitle: "From here I will manage the site. From here I will manage the site. From here I will manage the site.",
-            buttonName: "Log in",
-            imgURL: '/public/mario-builder.jpg'
+            title: "WHAT ABOUT THIS?",
+            subtitle: "Since I have a lot of free time I decided to create my personal website for two mainly reasons. To get a remote job and to test my skills.",
+            buttonName: "Contact",
+            imgURL: '/public/mario-builder.jpg',
+            route: "contact"
         }
     },
     computed: {

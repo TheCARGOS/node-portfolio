@@ -3,6 +3,7 @@ import Signin from "./components/layout/Signin.vue"
 import Dashboard from "./components/layout/Dashboard.vue"
 import Contact from "./components/layout/Contact.vue"
 import About from "./components/layout/About.vue"
+import CV from "./components/layout/CV.vue"
 
 export default [
     {
@@ -29,5 +30,10 @@ export default [
         path: "/about",
         component: About,
         name: "about"
+    },
+    {
+        path: "/cv",
+        component: CV,
+        name: "cv"
     }
 ]

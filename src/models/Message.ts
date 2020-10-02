@@ -5,7 +5,7 @@ const messageSchema = new Schema({
     email: String,
     phone: String,
     subject: String,
-    message: String
+    description: String
 })
 
 export default model("Message", messageSchema)

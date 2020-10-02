@@ -5,6 +5,7 @@
             :subtitle=subtitle
             :buttonName=buttonName
             :imgURL=imgURL
+            :route=route
         ></main-banner>
 
         <section class="main-portfolio__projects">
@@ -111,6 +112,7 @@ export default {
             subtitle: 'Hey there my name is Carlos Loayza. I am Junior Full Stack Web Developer focus on Frontend Development. Check out my projects and skills if you want to, please consider giving me feedback about this.',
             buttonName: "Give Feedback",
             imgURL: '../public/mario.png',
+            route: 'contact',
             // end banner content
 
             projects: [

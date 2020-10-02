@@ -15,4 +15,13 @@ router
 
     .post("/message", guestControllers.postMessage)
 
+
+    .get("/downloadCV", (req: Request, res: Response) => {
+        res.sendFile( path.join(__dirname, "../../dist/public/carlos-CV.pdf") )
+    })
+
+    .get("/*", (req: Request, res: Response) => {
+        res.sendFile(path.join(__dirname, "../../dist/index.html"))
+    })
+
 export default router

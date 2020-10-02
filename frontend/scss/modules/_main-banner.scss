@@ -33,7 +33,6 @@
     }
     
     &__button {
-        padding: 0 4.91rem;
         color: white;
         border: 1px solid white;
         border-radius: 10px;
@@ -114,5 +113,38 @@
             }
         }
 
+    }
+
+    &--darkred {
+        .main-banner__header {
+            background-image: linear-gradient(to right, $color-red, $color-darkred);
+            
+            &::before {
+                background-image: linear-gradient(to right, $color-red, $color-darkred);
+            }
+        }
+
+    }
+
+    &--white {
+        .main-banner__header {
+            color: $color-dark;
+            background-image: linear-gradient(to right, $color-white,#E1E1E1);
+            
+            &::before {
+                background-image: linear-gradient(to right, $color-white, #E1E1E1);
+            }
+        }
+
+        button {
+            background-color: transparent;
+            color: $color-darker;
+            border: 1px solid $color-darker;
+
+            &:hover {
+                background-color: $color-darker;
+                color: $color-white;
+            }
+        }
     }
 }

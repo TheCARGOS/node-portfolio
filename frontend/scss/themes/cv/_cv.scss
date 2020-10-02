@@ -1,0 +1,14 @@
+.main-cv {
+    &__grid {
+        display: grid;
+        grid-template-columns: 100%;
+
+        @media screen and (min-width: 570px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        & > div {
+            align-self: flex-start;
+        }
+    }
+}

@@ -5,12 +5,13 @@
             :subtitle=subtitle
             :buttonName=buttonName
             :imgURL=imgURL
+            :route=route
             class="main-banner--red"
         ></main-banner>
 
         <div class="container">
             <div class="main-form">
-                <h1 class="main-form__title">MESSAGE ME</h1>
+                <h1 class="title">MESSAGE ME</h1>
                 <span v-if="errors.length" class="main-contact__span">All fields are required.</span>
                 <form class="main-form__grid" @submit.prevent="sendMessage()">
                     <div>
@@ -85,7 +86,8 @@ export default {
             title: "CONTACT ME",
             subtitle: "Feel free to contact me anytime using this form or via gmail at loayavelez@gmail.com I will replay as  soon as possible.",
             buttonName: "Contact me",
-            imgURL: '/public/mario-beach.jpg'
+            imgURL: '/public/mario-beach.jpg',
+            route: "contact"
         }
     },
     methods: {

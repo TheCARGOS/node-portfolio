@@ -5,12 +5,13 @@
             :subtitle=subtitle
             :buttonName=buttonName
             :imgURL=imgURL
+            :route=route
             class="main-banner--red"
         ></main-banner>
 
         <div class="container">
             <div class="main-form">
-                <h1 class="main-form__title">SIGN IN AS CARLOS</h1>
+                <h1 class="title">SIGN IN AS CARLOS</h1>
                 <div v-if="errors.length">
                     <span>Please correct the following error(s):</span>
                     <ul>
@@ -60,7 +61,8 @@ export default {
             title: "LOGIN AS CARLOS",
             subtitle: "From here I will manage the site. From here I will manage the site. From here I will manage the site.",
             buttonName: "Log in",
-            imgURL: '/public/mario-fight.jpg'
+            imgURL: '/public/mario-fight.jpg',
+            route: "signin"
         }
     },
     computed: {

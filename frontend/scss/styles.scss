@@ -9,11 +9,13 @@ $color-blue: #255464;
 $color-purple: #E96BF2;
 $color-red: #E52E2E;
 $color-fuchsia: #B4477A;
+$color-darkred: #510000;
 
 @import "./base/_reset.scss";
 @import "./layout/_layout.scss";
 @import "./themes/_main-header.scss";
 @import "./themes/portfolio/_index.scss";
+@import "./themes/cv/_cv.scss";
 @import "./themes/signin/_index.scss";
 @import "./themes/_sidenav.scss";
 @import "./modules/_modules.scss";
