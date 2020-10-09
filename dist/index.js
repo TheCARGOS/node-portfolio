@@ -48,8 +48,8 @@ function init() {
                 case 0: return [4 /*yield*/, database_1.startConnection()];
                 case 1:
                     _a.sent();
-                    app_1.default.listen(3000, function () { return [
-                        console.log("Server is running on port 3000")
+                    app_1.default.listen(process.env.PORT || 3000, function () { return [
+                        console.log("Server is running on port " + app_1.default.get("port"))
                     ]; });
                     return [2 /*return*/];
             }
