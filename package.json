@@ -4,7 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "start": "node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
